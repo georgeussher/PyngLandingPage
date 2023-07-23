@@ -3,6 +3,10 @@ import { StyleSheet, Pressable, Text } from "react-native";
 
 export default function AppButton({title, backgroundColor, borderColor}){
 
+  const handleButtonPress = () => {
+    console.log("Button pressed!");
+  };
+
   const styles = StyleSheet.create({
     appButtonContainer: {
       width: 271,
@@ -26,7 +30,7 @@ export default function AppButton({title, backgroundColor, borderColor}){
   });
 
     return (
-    <Pressable style={styles.appButtonContainer} >
+    <Pressable onPress={handleButtonPress} style={styles.appButtonContainer} >
     <Text style={styles.appButtonText}>{title}</Text>
     </Pressable>
     )
