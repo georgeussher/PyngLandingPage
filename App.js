@@ -10,7 +10,16 @@ export default function App() {
   return (
     <View style={styles.container}> 
     <Logo/> 
-    <AppButton title={'Test'}/>
+    <AppButton 
+      backgroundColor={"#FE07C8"} 
+      title={'Login'}
+      borderColor={"#A010A3"}
+      />
+    <AppButton 
+      backgroundColor={"#A010A3"} 
+      title={'Signup'}
+      borderColor={"#FE07C8"}
+      />
     <StatusBar style="auto" />
     </View>
   );

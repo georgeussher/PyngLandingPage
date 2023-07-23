@@ -1,22 +1,17 @@
 import * as React from "react"
-import Svg, { Path,  } from "react-native-svg"
-import { View, Button, StyleSheet, TouchableOpacity, Text } from "react-native";
+import { StyleSheet, TouchableOpacity, Text } from "react-native";
 
-export default function AppButton({title}){
-    return (
-    <TouchableOpacity style={styles.appButtonContainer}>
-    <Text style={styles.appButtonText}>{title}</Text>
-    </TouchableOpacity>
-    )
-};
+export default function AppButton({title, backgroundColor, borderColor}){
 
-const styles = StyleSheet.create({
+  const styles = StyleSheet.create({
     appButtonContainer: {
       elevation: 8,
-      backgroundColor: "#009688",
+      backgroundColor: backgroundColor,
       borderRadius: 10,
       paddingVertical: 10,
-      paddingHorizontal: 12
+      paddingHorizontal: 12,
+      borderColor: borderColor,
+      borderWidth: 1,
     },
     appButtonText: {
       fontSize: 18,
@@ -26,3 +21,11 @@ const styles = StyleSheet.create({
       textTransform: "uppercase"
     }
   });
+
+    return (
+    <TouchableOpacity style={styles.appButtonContainer} >
+    <Text style={styles.appButtonText}>{title}</Text>
+    </TouchableOpacity>
+    )
+};
+
