@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import  Logo  from './components/Logo.js';
 import AppButton from './components/Button.js';
 // import Svg, { Path, } from 'react-native-svg';
-import './styles.css';
+// import './styles.css';
  
 
 export default function App() {
