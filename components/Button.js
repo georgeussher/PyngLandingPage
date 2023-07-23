@@ -1,17 +1,20 @@
 import * as React from "react"
-import { StyleSheet, TouchableOpacity, Text } from "react-native";
+import { StyleSheet, Pressable, Text } from "react-native";
 
 export default function AppButton({title, backgroundColor, borderColor}){
 
   const styles = StyleSheet.create({
     appButtonContainer: {
+      width: 271,
+      height: 44,
       elevation: 8,
       backgroundColor: backgroundColor,
-      borderRadius: 10,
+      borderRadius: 50,
       paddingVertical: 10,
       paddingHorizontal: 12,
       borderColor: borderColor,
       borderWidth: 1,
+      marginVertical: 8,
     },
     appButtonText: {
       fontSize: 18,
@@ -23,9 +26,9 @@ export default function AppButton({title, backgroundColor, borderColor}){
   });
 
     return (
-    <TouchableOpacity style={styles.appButtonContainer} >
+    <Pressable style={styles.appButtonContainer} >
     <Text style={styles.appButtonText}>{title}</Text>
-    </TouchableOpacity>
+    </Pressable>
     )
 };
 
