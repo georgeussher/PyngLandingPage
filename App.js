@@ -3,11 +3,10 @@ import { StyleSheet, View } from 'react-native';
 import NavbarContainer from './components/navbar';
 
 
- 
 
 export default function App() {
   return (
-    <View styles={styles.buttonContainer} > 
+    <View style={styles.container} > 
       <NavbarContainer />
     </View>
   );
@@ -16,16 +15,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "space-around",
-    alignItems: "center",
-    marginTop: 150,
-  },
-  buttonContainer: {
-    flex: 1,
     justifyContent: "flex-end",
     alignItems: "center",
-    marginBottom: 36,
-    backgroundColor: "#E010A5",
-  },
- 
+  }
 });
