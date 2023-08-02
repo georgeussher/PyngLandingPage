@@ -1,7 +1,7 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import  Logo  from './components/Logo.js';
+import  Logo  from './components/logo';
 import AppButton from './components/Button.js';
 // import Svg, { Path, } from 'react-native-svg';
 // import './styles.css';
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "space-around",
     alignItems: "center",
-    backgroundColor: "#f0f0f0",
+    backgroundColor: "#FFF",
     marginTop: 150,
   },
   buttonContainer: {
