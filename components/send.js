@@ -4,7 +4,9 @@ import { StyleSheet,Text, View, Pressable} from "react-native";
 export default function send(){
     return (
         <Pressable style={styles.SendButton}>
-            <Text></Text>
+            <View>
+
+            </View>
         </Pressable>
     )
 };
