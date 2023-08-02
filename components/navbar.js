@@ -17,7 +17,7 @@ export default function NavbarContainer(){
         </View>
     )
 }
-// why does adding flex box stretch the navbar??
+
 const styles = StyleSheet.create({
     NavbarContainer: {
       flexDirection: 'row',
